@@ -8,11 +8,26 @@
   .container  {
 	max-width: 1920px;
     position: relative;
+   
+     
 }
 .container .icon {
     position: absolute;
     margin: 25px 0 0 50%;
+    
 
+}
+.container .little_menu {
+    position: absolute;
+    color: #fff;
+    top: 25px;
+    left: 25px;
+}
+.container .stores {
+    position: absolute;
+    color: #fff;
+    right: 25px;
+    top: 25px;
 }
 section img {
     padding: 2px;
