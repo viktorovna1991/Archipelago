@@ -7,14 +7,20 @@
 }
   .container  {
 	max-width: 1920px;
+    position: relative;
+}
+.container .icon {
+    position: absolute;
+    margin: 25px 0 0 50%;
+
 }
 section img {
     padding: 2px;
 }
 
 footer {
-    width: 1920px;
-    height: 156px;
+    max-width: 1920px;
+    max-height: 156px;
     background-color: white;
   
 }
@@ -24,4 +30,53 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+ .bottom {
+    margin-top: 105px;
+    margin-bottom: 28px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.bottom a{
+    font: normal 10px Arial;
+	text-decoration: none;
+	color: black;
+}
+.bottom .menu   {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+.bottom .menu ul {
+   padding-right: 94px; 
+     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap; 
+}
+.bottom .menu ul:first-child {
+    margin-left: 25px;
+}
+.bottom .design  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+  
+}
+.bottom .design ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap; 
+}
+.bottom .design ul:last-child {
+    margin-right: 55px;
 }
