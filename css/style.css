@@ -11,12 +11,13 @@
    
      
 }
-.container .icon {
+.container .icon  img {
+    max-width: 100%;
     position: absolute;
-    margin: 25px 0 0 50%;
-    
-
+    margin: 25px 0 0 47%;
+   
 }
+
 .container .little_menu {
     position: absolute;
     color: #fff;
@@ -28,6 +29,13 @@
     color: #fff;
     right: 25px;
     top: 25px;
+}
+.container .logo img {
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)    
 }
 section img {
     padding: 2px;
