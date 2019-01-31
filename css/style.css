@@ -9,7 +9,6 @@
 	max-width: 1920px;
     position: relative;
    
-     
 }
 .container .icon  img {
     width: 5%;
@@ -18,23 +17,33 @@
    
 }
 
-.container .little_menu {
+.container .little_menu a {
     position: absolute;
     font-family: Apercu Pro Regular;
     font-weight: normal;
     font-size: 16px;
     color: #fff;
+    text-decoration: none;
     top: 25px;
     left: 25px;
 }
-.container .stores {
+.container .little_menu a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.container .stores a {
     position: absolute;
     font-family: Apercu Pro Regular;
     font-weight: normal;
     font-size: 16px;
     color: #fff;
+    text-decoration: none;
     right: 25px;
     top: 25px;
+}
+.container .stores a:hover {
+    color: #000;
+    text-decoration: none;
 }
 .container .logo img {
     width: 80%;
@@ -74,11 +83,11 @@ footer {
 	text-decoration: none;
 	color: #9B9B9B;
 }
-.bottom .menu span {
-    font: 500 10px Helvetica;
-	text-decoration: none;
-	color: #000;
+.bottom  a:hover {
+    color: #000;
+    text-decoration: none;
 }
+
 .bottom .menu   {
     display: flex;
     flex-direction: row;

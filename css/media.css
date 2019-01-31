@@ -22,5 +22,10 @@
 
     
     
+    .container .head img {
+      max-width: 130%;
+        overflow: hidden;
+          
+    } 
     
 }
