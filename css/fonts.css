@@ -1,0 +1,39 @@
+@font-face {
+
+font-family: 'Apercu Pro Regular';
+
+src: url('../fonts/Apercu Pro Regular.otf');
+
+src: url('../fonts/Apercu Pro Regular.otf') format('otf'),
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+@font-face {
+
+font-family: 'Helvetica';
+
+src: url('../fonts/HelveticaRegular/HelveticaRegular.eot');
+
+src: url('../fonts/HelveticaRegular/HelveticaRegular.ttf') format('ttf'),
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+@font-face {
+
+font-family: 'Helvetica';
+
+src: url('../fonts/HelveticaRegular/HelveticaMedium.eot');
+
+src: url('../fonts/HelveticaRegular/HelveticaMedium.ttf') format('ttf'),
+
+font-weight: bolder;
+
+font-style: normal;
+
+}

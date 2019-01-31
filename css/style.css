@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	max-width: 1920px;
 	width: auto;
-	border: 2px solid yellow;
+/*	border: 2px solid yellow;*/
     
 }
   .container  {
@@ -12,7 +12,7 @@
      
 }
 .container .icon  img {
-    max-width: 100%;
+    width: 3%;
     position: absolute;
     margin: 25px 0 0 47%;
    
@@ -20,12 +20,18 @@
 
 .container .little_menu {
     position: absolute;
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 16px;
     color: #fff;
     top: 25px;
     left: 25px;
 }
 .container .stores {
     position: absolute;
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 16px;
     color: #fff;
     right: 25px;
     top: 25px;
@@ -57,16 +63,21 @@ footer {
  .bottom {
     margin-top: 105px;
     margin-bottom: 28px;
-    border: 2px solid red;
+/*    border: 2px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
    
 }
 .bottom a{
-    font: normal 10px Arial;
+    font: 500 10px Helvetica;
 	text-decoration: none;
-	color: black;
+	color: #9B9B9B;
+}
+.bottom .menu span {
+    font: 500 10px Helvetica;
+	text-decoration: none;
+	color: #000;
 }
 .bottom .menu   {
     display: flex;
@@ -81,6 +92,8 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: nowrap; 
+    line-height: 0.7;
+    
 }
 .bottom .menu ul:first-child {
     margin-left: 25px;
@@ -98,8 +111,10 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
+    line-height: 0.7;
 }
 .bottom .design ul:last-child {
     margin-right: 55px;
 }
+
