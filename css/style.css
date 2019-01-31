@@ -1,20 +1,22 @@
 #wrapper {
-	margin: 0 auto;
-	max-width: 1920px;
-	width: auto;
-/*	border: 2px solid yellow;*/
-    
+    margin: 0 auto;
+    max-width: 1920px;
+    width: auto;
+    /*	border: 2px solid yellow;*/
+
 }
-  .container  {
-	max-width: 1920px;
+
+.container {
+    max-width: 1920px;
     position: relative;
-   
+
 }
-.container .icon  img {
+
+.container .icon img {
     width: 5%;
     position: absolute;
     margin: 25px 0 0 47%;
-   
+
 }
 
 .container .little_menu a {
@@ -27,10 +29,12 @@
     top: 25px;
     left: 25px;
 }
+
 .container .little_menu a:hover {
     color: #000;
     text-decoration: none;
 }
+
 .container .stores a {
     position: absolute;
     font-family: Apercu Pro Regular;
@@ -41,17 +45,20 @@
     right: 25px;
     top: 25px;
 }
+
 .container .stores a:hover {
     color: #000;
     text-decoration: none;
 }
+
 .container .logo img {
     width: 80%;
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%)    
+    transform: translate(-50%, -50%)
 }
+
 section img {
     padding: 2px;
 }
@@ -60,61 +67,70 @@ footer {
     max-width: 1920px;
     max-height: 156px;
     background-color: white;
-  
+
 }
+
 .s_3,
-.s_4, 
+.s_4,
 .s_6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
- .bottom {
+
+.bottom {
     margin-top: 105px;
     margin-bottom: 28px;
-/*    border: 2px solid red;*/
+    /*    border: 2px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
+
 }
-.bottom a{
+
+.bottom a {
     font: 500 10px Helvetica;
-	text-decoration: none;
-	color: #9B9B9B;
+    text-decoration: none;
+    color: #9B9B9B;
 }
-.bottom  a:hover {
+
+.bottom a:hover {
     color: #000;
     text-decoration: none;
 }
 
-.bottom .menu   {
+.bottom .menu {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    
+
 }
+
 .bottom .menu ul {
-   padding-right: 94px; 
-     display: flex;
+    padding-right: 94px;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     line-height: 0.7;
-    
+
 }
+
 .bottom .menu ul:first-child {
     margin-left: 25px;
 }
-.bottom .design  {
+
+.bottom .design {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: nowrap;
-  
+
 }
+
 .bottom .design ul {
     display: flex;
     flex-direction: column;
@@ -123,6 +139,7 @@ footer {
     flex-wrap: nowrap;
     line-height: 0.7;
 }
+
 .bottom .design ul:last-child {
     margin-right: 55px;
 }
