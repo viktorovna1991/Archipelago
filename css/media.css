@@ -43,6 +43,51 @@
     }
 */
 }
+
 @media (max-width: 375px) {
+    
+    .s_3,
+    .s_4,
+    .s_6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+ 
+    section img {
+        padding: 1px 0;
+    }
+    .s_1,
+    .s_2,
+    .s_5 {
+        font-size: 0;
+    }
+    .s_2 img {
+        border: 0;
+        display: block;
+    }
+    .s_3 img,
+    .s_4 img,
+    .s_6 img {
+        width: 100%;
+        
+    }
+
+    footer {
+        max-height: 256px;
+    }
+    .container .little_menu .littleMenu,
+    .container .icon .Icon,
+    .container .stores .Stores {
+        display: none;
+    }
+    
+   .container .little_menu .burger,
+    .container .stores .icon1 {
+        display: block;
+    }
+    
     
 }

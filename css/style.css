@@ -2,7 +2,7 @@
     margin: 0 auto;
     max-width: 1920px;
     width: auto;
-    /*	border: 2px solid yellow;*/
+/*    	border: 2px solid yellow;*/
 
 }
 
@@ -39,7 +39,7 @@
     z-index: 1;
 }
 
-.container .little_menu a:hover {
+.container  a:hover {
     color: #000;
     text-decoration: none;
 }
@@ -56,10 +56,6 @@
     z-index: 1;
 }
 
-.container .stores a:hover {
-    color: #000;
-    text-decoration: none;
-}
 
 .container .logo img {
     width: 80%;
@@ -93,7 +89,7 @@ footer {
 .bottom {
     margin-top: 105px;
     margin-bottom: 28px;
-    /*    border: 2px solid red;*/
+/*        border: 2px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -154,3 +150,12 @@ footer {
 .bottom .design ul:last-child {
     margin-right: 55px;
 }
+.container .little_menu .littleMenu,
+    .container .icon .Icon,
+    .container .stores .Stores {
+        display: inline-block;
+    }
+   .container .little_menu .burger,
+    .container .stores .icon1 {
+        display: none;
+    }
