@@ -22,12 +22,15 @@
         margin-bottom: 20px;
     }
 
-    .container .head {
+   
+/*
+ .container .head {
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+         background: cover;
         overflow: hidden;
     }
 
@@ -35,6 +38,11 @@
         max-width: initial !important;
         width: auto;
         height: 100%;
+        
+         
     }
-
+*/
+}
+@media (max-width: 375px) {
+    
 }
