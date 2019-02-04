@@ -30,29 +30,56 @@
 //  
 //});
 
-
-
-
 $(document).ready(function() {
-    var $toggleButton = $('.little_menu'),
-        $menuWrap = $('.popup');
-    $toggleButton.on('click', function() {
-        $(this).toggleClass('button-open');
-        $menuWrap.toggleClass('menu-show');
+
+    var $menuButton = $('.little_menu'),
+        $menuWrap = $('.popup'),
+        $overlay = $('#overlay'),
+        $close = $('a.close');
+
+    $menuButton.on('click', function() {
+
+        //cancel event (click)
+        event.preventDefault();
+
+        //add class button-open
+        $(this).addClass('button-open');
+
+        //add class menu-show
+        $menuWrap.addClass('menu-show');
+
+        //show bg 250ms
+        $overlay.fadeIn(250);
     });
-    
-   
-	
-//	$('a.close').click(function () {
-//		
-//		$('.popup').fadeOut(300);
-//		setTimeout(function() {
-//			$('#overlay').fadeOut(300);
-//		},200);
-//		
-//	});
-//    
-//	
+
+    $close.click(function (event) {
+
+        //cancel event (click)
+        event.preventDefault();
+
+        //remove class menu-show
+        $menuWrap.removeClass('menu-show');
+
+        //remove class menu-show
+        $menuButton.removeClass('button-open');
+
+        //hide bg 250ms
+        $overlay.fadeOut(250);
+
+	});
+
+    $overlay.click(function () {
+
+        //remove class menu-show
+        $menuWrap.removeClass('menu-show');
+
+        //remove class menu-show
+        $menuButton.removeClass('button-open');
+
+        //hide bg 250ms
+        $overlay.fadeOut(250);
+
+    });
     
    
 });
