@@ -180,6 +180,7 @@ footer {
 }
 
 .popup .TopMenu  {
+    position: absolute;
     margin-top: 120px;
     margin-left: 25px;
     
@@ -207,17 +208,12 @@ footer {
     
 }
 
-.popup a.close {
-    width:16px;
-    height:16px;
+.popup a.close img {
     display:block;
     position:absolute;
     top: 25px;
     right: 25px;
     text-decoration: none;
-    font-family: Arial;
-    font-weight: bold;
-    color: black;
      
 }
 
@@ -229,17 +225,30 @@ footer {
     left:0;
     display:none;
     background:#000;
-    opacity:.8;
+    opacity:.5;
     z-index:2;
     cursor: pointer;
 }
 
 .menu-show {
     margin-left: 0;
-    
-   
+     
 }
 .button-open  {
     transition: .7s;
     margin-left: 0;
 }
+
+.TopMenu .sub-menu { 
+  display: none; 
+  }
+
+.TopMenu li:hover ul { 
+  display: block; 
+  } 
+
+ .TopMenu ul li a:hover { 
+  
+  text-decoration: underline; 
+  
+  }  

@@ -86,11 +86,12 @@
 </div>
 
 <div class="popup">
-    <a class="close" href="#">X</a>
+    <a class="close" href="#"><img src="images/Menu%20close.png" alt="close"></a>
         <nav class='TopMenu'>
             <ul>
-                <li><a href="#">FURNITURE</a></li>
-                    <ul class="sub-menu">
+                <li class="menu-item-has-children"><a href="#" onclick="menuOpen('s_mn_1');return(false)">FURNITURE</a></li>
+                    <span class="sidebar-menu-arrow"></span>
+                    <ul class="sub-menu" id="s_mn_1">
                         <li><a href="#">all</a></li>
                         <li><a href="#">tables</a></li>
                         <li><a href="#">seating</a></li>
@@ -99,8 +100,9 @@
                         <li><a href="#">sofa</a></li>
                         <li><a href="#">shelves</a></li>  
                     </ul>
-                <li><a href="#">LIGHT</a></li>
-                    <ul class="sub-menu">
+                <li class="menu-item-has-children"><a href="#" onclick="menuOpen('s_mn_2');return(false)">LIGHT</a></li>
+                    <span class="sidebar-menu-arrow"></span>
+                    <ul class="sub-menu" id="s_mn_2">
                         <li><a href="#">all</a></li>
                         <li><a href="#">seiling</a></li>
                         <li><a href="#">wall</a></li>
