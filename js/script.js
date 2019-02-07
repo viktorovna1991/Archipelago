@@ -103,13 +103,57 @@ function menuOpen(id){
   } 
 } 
 
-function menuOpen(id){ 
-  for (i=0; i <= m_id.length; i++){ 
-  if (id != m_id[i]){ 
-  document.getElementById(m_id[i]).style.display = "block"; } 
-  } 
-  
-} 
+$(document).ready(function() {
 
+    var $stores = $('.stores'),
+        $menuWrap2 = $('.popup2'),
+        $overlay = $('#overlay'),
+        $close2 = $('a.close2');
 
+    $stores.on('click', function() {
+
+        //cancel event (click)
+        event.preventDefault();
+
+        //add class button-open
+        $(this).addClass('button-open2');
+
+        //add class menu-show
+        $menuWrap2.addClass('menu-show2');
+
+        //show bg 250ms
+        $overlay.fadeIn(250);
+    });
+
+    $close2.click(function (event) {
+
+        //cancel event (click)
+        event.preventDefault();
+
+        //remove class menu-show
+        $menuWrap2.removeClass('menu-show2');
+
+        //remove class menu-show
+        $stores.removeClass('button-open2');
+
+        //hide bg 250ms
+        $overlay.fadeOut(250);
+
+	});
+
+    $overlay.click(function () {
+
+        //remove class menu-show
+        $menuWrap2.removeClass('menu-show2');
+
+        //remove class menu-show
+        $stores.removeClass('button-open2');
+
+        //hide bg 250ms
+        $overlay.fadeOut(250);
+
+    });
+    
+   
+});
 window.onload=listStart; 
