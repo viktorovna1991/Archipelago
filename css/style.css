@@ -285,6 +285,41 @@ footer {
     margin-top: 120px;
     margin-left: 25px;
     color: #fff;
+    
+}
+.popup2 .rightForm .one li {
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 14px;
+    color: #808081;
+    line-height: 0.9;
+    border-left: 1px solid #757576;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #757576;
+    padding-bottom: 10px;
+    border-right: 1px solid #757576;
+    padding-left: 15px;
+    position: relative;
+}
+.rightForm .one .filter {
+    margin-top: 30px;
+    
+    
+}
+.rightForm .one .filter li::after {
+    content: "";
+    background: url("../images/Page%201.png");
+    width: 9px;
+    height: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 2px 8px;
+    background-position: center;
 }
 .rightForm .one,
 .rightForm .two,
