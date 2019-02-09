@@ -2,7 +2,7 @@
     margin: 0 auto;
     max-width: 1920px;
     width: auto;
-/*    	border: 2px solid yellow;*/
+    /*    	border: 2px solid yellow;*/
 
 }
 
@@ -10,13 +10,14 @@
     max-width: 1920px;
 
 }
+
 .container .head {
     display: block;
     position: relative;
     background: url('../images/head.png') center/cover;
     width: 100%;
     height: 100vh;
-/*    border: 2px solid yellow;*/
+    /*    border: 2px solid yellow;*/
 }
 
 .container .icon img {
@@ -28,7 +29,7 @@
 }
 
 .container .little_menu a {
-    position: fixed;
+    position: absolute;
     font-family: Apercu Pro Regular;
     font-weight: normal;
     font-size: 16px;
@@ -39,8 +40,13 @@
     z-index: 1;
 }
 
-.container  a:hover {
+.container a:hover {
     color: #000;
+    text-decoration: none;
+}
+
+.container .little_menu a.max_index:hover {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -89,7 +95,7 @@ footer {
 .bottom {
     margin-top: 105px;
     margin-bottom: 28px;
-/*        border: 2px solid red;*/
+    /*        border: 2px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -150,41 +156,44 @@ footer {
 .bottom .design ul:last-child {
     margin-right: 55px;
 }
+
 .container .little_menu .littleMenu,
-    .container .icon .Icon,
-    .container .stores .Stores {
-        display: inline-block;
-    }
-   .container .little_menu .burger,
-    .container .stores .icon1 {
-        display: none;
-    }
+.container .icon .Icon,
+.container .stores .Stores {
+    display: inline-block;
+}
+
+.container .little_menu .burger,
+.container .stores .icon1 {
+    display: none;
+}
 
 .popup {
     position: fixed;
     width: 300px;
     height: 100vh;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     /*display:none;*/
     /*overflow:hidden;*/
-    background:#fff;
+    background: #fff;
     margin-left: -300px;
     opacity: 0.85;
     transition: .25s;
-    z-index: 3;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
 }
 
-.popup .TopMenu  {
+.popup .TopMenu {
     position: absolute;
     margin-top: 120px;
     margin-left: 25px;
-    
+
 }
+
 .popup .TopMenu a {
     font-family: Apercu Pro Regular;
     font-weight: normal;
@@ -205,36 +214,37 @@ footer {
     color: #000;
     margin-left: 25px;
     margin-bottom: 17px;
-    
+
 }
 
 .popup a.close img {
-    display:block;
-    position:absolute;
+    display: block;
+    position: absolute;
     top: 25px;
     right: 25px;
     text-decoration: none;
-     
+
 }
 
 #overlay {
-    width:100%;
-    height:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    display:none;
-    background:#000;
-    opacity:.5;
-    z-index:2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #000;
+    opacity: .5;
+    z-index: 2;
     cursor: pointer;
 }
 
 .menu-show {
     margin-left: 0;
-     
+
 }
-.button-open  {
+
+.button-open {
     transition: .7s;
     margin-left: 0;
 }
@@ -245,23 +255,23 @@ footer {
   }
 */
 
-.TopMenu li:hover ul { 
-  display: block; 
-  } 
+.TopMenu li:hover ul {
+    display: block;
+}
 
- .TopMenu ul li a:hover { 
-  text-decoration: underline; 
-  }  
+.TopMenu ul li a:hover {
+    text-decoration: underline;
+}
 
 .popup2 {
     position: fixed;
     width: 300px;
     height: 100vh;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     /*display:none;*/
     /*overflow:hidden;*/
-    background:#000;
+    background: #000;
     margin-right: -300px;
     opacity: 0.85;
     transition: .25s;
@@ -271,22 +281,24 @@ footer {
     justify-content: space-between;
     overflow: auto;
 }
+
 .popup2 a.close2 img {
-    display:block;
-    position:absolute;
+    display: block;
+    position: absolute;
     top: 25px;
     left: 25px;
     text-decoration: none;
-     
+
 }
 
-.popup2 .rightForm  {
+.popup2 .rightForm {
     position: absolute;
     margin-top: 120px;
     margin-left: 25px;
     color: #fff;
-    
+
 }
+
 .popup2 .rightForm .one li {
     font-family: Apercu Pro Regular;
     font-weight: normal;
@@ -301,11 +313,13 @@ footer {
     padding-left: 15px;
     position: relative;
 }
+
 .rightForm .one .filter {
     margin-top: 30px;
-    
-    
+
+
 }
+
 .rightForm .one .filter li::after {
     content: "";
     background: url("../images/Page%201.png");
@@ -321,13 +335,15 @@ footer {
     padding: 2px 8px;
     background-position: center;
 }
+
 .rightForm .one,
 .rightForm .two,
 .rightForm .three,
 .rightForm .four,
-.rightForm .five {  
+.rightForm .five {
     margin-bottom: 30px;
 }
+
 .rightForm p {
     font-family: Apercu Pro Regular;
     font-weight: normal;
@@ -335,20 +351,23 @@ footer {
     color: #808081;
     line-height: 1.5;
 }
+
 .rightForm h3 {
     font-family: Apercu Pro Regular;
     font-weight: normal;
     font-size: 16px;
     color: #fff;
-    line-height: 0.9; 
+    line-height: 0.9;
 }
+
 .rightForm h4 {
     font-family: Apercu Pro Regular;
     font-weight: normal;
     font-size: 14px;
     color: #fff;
-    line-height: 1.5;  
+    line-height: 1.5;
 }
+
 .rightForm span {
     font-family: Apercu Pro Regular;
     font-weight: normal;
@@ -357,27 +376,185 @@ footer {
     line-height: 0.9;
     text-decoration: underline;
 }
+
 .rightForm h1 {
     font-family: Apercu Pro Regular;
     font-weight: normal;
     font-size: 18px;
     color: #fff;
-    line-height: 1.5;  
+    line-height: 1.5;
 }
+
 .rightForm h2 {
     font-family: Apercu Pro Regular;
     font-weight: normal;
     font-size: 18px;
     color: #808081;
-    line-height: 1.5;  
+    line-height: 1.5;
 }
 
-.button-open2  {
+.button-open2 {
     transition: .7s;
     margin-right: 0;
 }
+
 .menu-show2 {
-    margin-right: 0;
-     
+    margin-right: 0 !important;
 }
 
+.popupContact {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    left: 300px;
+    /*display:none;*/
+    /*overflow:hidden;*/
+    background: #000;
+    margin-left: -600px;
+    opacity: 1;
+    transition: .25s;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.popupContact a.closeContact img {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 2px 2px;
+    background-position: center;
+}
+
+.popupContact .rightFormContact {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 25px;
+    color: #fff;
+}
+
+.popupContact .bigContact h2 {
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.popupContact .rightFormContact h3 {
+    font-family: Apercu Pro Regular;
+    font-weight: 100;
+    font-size: 16px;
+    color: #D1D1D1;
+    line-height: 1.5;
+}
+
+.popupContact .rightFormContact h4 {
+    font-family: Apercu Pro Regular;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.rightFormContact div {
+    margin-bottom: 25px;
+}
+
+.button-open3 {
+    transition: .7s;
+    margin-left: 300;
+}
+
+.menu-show3 {
+    margin-left: 0;
+}
+
+.Press {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    margin-left: -100%;
+    transition: all .25s;
+
+    padding-top: 120px;
+    overflow: auto;
+}
+
+.menu-show-left {
+    margin-left: 0;
+}
+
+.max_index {
+    z-index: 100 !important;
+}
+
+.Press .PressContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.Press .right p {
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.Press .left {
+/*    border: 2px solid red;*/
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Press .right {
+/*    border: 2px solid red;*/
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 67px;
+}
+
+.press-box .press-item {
+    margin-bottom: 30px;
+}
+
+.Press .left .box-img {
+    position: relative;
+    max-width: 60%;
+    width: 100%;
+    height: 70vh;
+/*    border: 1px solid red;*/
+}
+
+.Press .left .box-img img {
+    position: absolute;
+}
+
+.Press .left .box-img img.first {
+    top: 0;
+    right: 0;
+    height: 85%;
+}
+
+.Press .left .box-img img.second {
+    bottom: 0;
+    left: 0;
+    height: 65%;
+}
