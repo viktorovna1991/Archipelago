@@ -623,8 +623,7 @@ footer {
     margin-top: 0 !important;
 }
 .About .blackWrapper img {
-
-    position: absolute;
+  position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
@@ -632,12 +631,42 @@ footer {
     height: 100%;
 }
 .About .blackWrapper .blackCube {
- 
-    position: absolute;
+  position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
     width: 50%;
     height: 100%;
     background: black;
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.textLeft, .textRight {
+    color: #fff;
+}
+.blackCube .textLeft {
+    margin-right: 75px;
+    width: 280px;
+    height: auto;
+}
+.textLeft h1,
+.textRight h1 {
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.textLeft p,
+.textRight p  {
+  font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 30px;  
+}
+.textRight h4 {
+    color: #888787;
 }
