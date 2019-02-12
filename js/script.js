@@ -111,6 +111,8 @@ $(document).ready(function() {
      //menu About
     var $About = $('.menuAbout'),
         $wrapAbout = $('.About .whiteWrapper');
+        $wrapInwrap = $('.About .repeatImg');
+    
     
     $About.on('click', function() {
 
@@ -119,6 +121,7 @@ $(document).ready(function() {
 
         //add class menu-show
         $wrapAbout.addClass('menu-show-left');
+        $wrapInwrap.addClass('menu-show-left');
         $menuClose.addClass('max_index black_menu'); 
         $Stores.addClass('max_index black_menu');
        
@@ -131,12 +134,46 @@ $(document).ready(function() {
         event.preventDefault();
 
         //remove class menu-show
-        $wrapAbout.removeClass('menu-show-left');
+        $wrapAbout.removeClass('menu-show-left'); $wrapInwrap.removeClass('menu-show-left');
         $menuClose.removeClass('max_index black_menu');
         $Stores.removeClass('max_index black_menu');
        
 	});
     //end About
+    
+    
+    
+     //menu Line
+    var $Line = $('.menuLine'),
+        $wrapInwrap = $('.About .repeatImg');
+    
+    
+    $Line.on('click', function() {
+
+        //cancel event (click)
+        event.preventDefault();
+
+        //add class menu-show
+        $wrapInwrap.addClass('lineDisplay');
+       
+       
+        
+    });
+
+    $menuClose.click(function (event) {
+
+        //cancel event (click)
+        event.preventDefault();
+
+        //remove class menu-show
+       $wrapInwrap.removeClass('lineDisplay');
+        $menuClose.removeClass('max_index black_menu');
+        $Stores.removeClass('max_index black_menu');
+       
+	});
+    //end Line
+    
+    
     
     //Stores
     var $stores = $('.stores'),
