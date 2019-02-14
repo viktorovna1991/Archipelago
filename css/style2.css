@@ -1,0 +1,64 @@
+#wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: auto;
+    height: 1080px;
+    
+    border: 2px solid yellow;
+
+}
+
+.container {
+    max-width: 1920px;
+
+}
+
+
+
+.container .icon img {
+    width: 4%;
+    position: absolute;
+    margin: 25px 0 0 47%;
+    z-index: 1;
+
+}
+
+.container .little_menu a {
+    position: absolute;
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    top: 27px;
+    left: 27px;
+    z-index: 1;
+}
+
+.container a:hover {
+    color: #757575;
+    text-decoration: none;
+}
+
+.container .little_menu a.max_index:hover {
+    color: #757575;
+    text-decoration: none;
+}
+
+.container .stores a {
+    position: absolute;
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    right: 27px;
+    top: 27px;
+    z-index: 1;
+}
+.s_1 {
+    max-width: 1748px;
+    height: 908px;
+    background-color: #FAFAFA;
+    margin: 86px ;
+}
