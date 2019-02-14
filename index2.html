@@ -31,7 +31,41 @@
         </header>
 
         <section class='s_1'>
-           
+           <div class=" table" >
+               <div class="partOne">
+                  <legend>REQUEST PRODUCT:</legend>
+                  <form action="handler.php">
+                      <input type="text" required placeholder="SEALING TUBE — BRONSE">
+                      <input type="number" size="3" name="num" min="1" max="10" value="1">
+                  </form>
+                  <div class="result">
+                      <p>PRICE:  US$ 1.200 </p>
+                      <p>TOTAL PRICE:  US$ 2.400 </p>
+                  </div> 
+               </div>
+                <div class="partTwo">
+                    <legend>CONTACT INFORMATION:</legend>
+                    <form action="handler.php">
+                      <input type="text" required placeholder="Michel ">
+                      <input type="text" required placeholder="van der Ploeg">
+                      <input type="text" required placeholder="COMPANY">
+                      <input type="email" name="email"  required placeholder="email">
+                      <input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}" required placeholder="*PHONE NUMBER">
+                       <input type="text" required placeholder="COUNTRY">
+                  </form>
+                </div>
+                <div class="partThree">
+                   <input type="submit" value="SEND REQUEST">
+                   <div class="info">
+                       <div class="delivery">
+                          <p>Approximate time of delivery: 2 — 5 weeks, please contact us for delivery time outside the EU  </p> 
+                       </div>
+                       <div class="someText">
+                          <p>Some sentence about the time of replying on the request. And that we don't use the contact information for commerical purposes . And that the price of delivery is not included. </p> 
+                       </div>
+                   </div> 
+                </div>
+            </div>
         </section>
         
         <footer>

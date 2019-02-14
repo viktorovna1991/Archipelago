@@ -61,4 +61,46 @@
     height: 908px;
     background-color: #FAFAFA;
     margin: 86px ;
+    position: relative;
 }
+.s_1 .table {
+    width: 930px;
+    height: 581px;
+    border: 2px solid yellow; 
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+   
+}
+.partOne legend {
+    color: #000;
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 13px;
+}   
+.partOne input {
+    width: 930px;
+    padding-bottom: 20px;
+}
+input[type="text"] { 
+    border: 1px solid #BEBFC1; 
+    background: transparent; 
+    color: #B7C5CE;
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 14px;
+   }
+ input[type="text"]::placeholder { 
+     color:  #B7C5CE;
+     margin-top: 5px;
+     margin-bottom: 25px;
+     margin-left: 20px;
+    font-family: Apercu Pro Regular;
+    font-weight: normal;
+    font-size: 14px;
+     text-indent: 20px;
+    
+} 
