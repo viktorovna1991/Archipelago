@@ -36,7 +36,12 @@
                   <legend>REQUEST PRODUCT:</legend>
                   <form action="handler.php">
                       <input type="text" required placeholder="SEALING TUBE — BRONSE">
-                      <input type="number" size="3" name="num" min="1" max="10" value="1">
+                      <div class="number">
+                          <input type="number" size="3" name="num" min="1" max="10" value="1">
+                              <span><img src="images/Arrow%20up.png" alt="arrowUp" class="arrowUp"></span>
+                              <span><img src="images/Arrow%20up.png" alt="arrowDown" class="arrowDown"></span>
+                              <lable>QUANTITY</lable>
+                      </div>
                   </form>
                   <div class="result">
                       <h2>PRICE:  US$ 1.200 </h2>
