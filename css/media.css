@@ -96,62 +96,73 @@
         width: 100%;
         margin-bottom: 50px;
     }
+
     .Press .right {
         width: 100%;
     }
+
     .container .little_menu a.burger {
         display: block;
         z-index: 6;
     }
-    
+
     .About .blackWrapper .repeatImg {
         margin-top: -600%;
-        
-      
+        display: flex;
+        flex-direction: column-reverse;
+
     }
+
     .About .blackWrapper .repeatImg img {
- 
+
         background-position: center 50%;
         height: auto;
         z-index: 7;
-       
-        
+
+
     }
+
     .About .text p {
         font-size: 20px;
         margin-left: 25px;
         margin-right: 25px;
         margin-bottom: 25px;
     }
+
     .About .blackWrapper .blackCube {
         width: 100%;
         height: auto;
         flex-direction: column;
         padding-bottom: 10px;
         z-index: 6;
-       
+
     }
+
     .About .burgerBlack img {
         margin: 27px 85% 0 25px;
-  
+
     }
-  .blackCube .textLeft {
+
+    .blackCube .textLeft {
         display: none;
     }
+
     .blackCube .textRight {
         margin-top: 150px;
     }
+
     .About .blackIcon img {
-    margin: 25px 25px 0 85%;
+        margin: 25px 25px 0 85%;
         width: 10%;
     }
+
     .About .text {
         margin-top: 60px;
     }
-  
+
     .popupContact {
         left: 0;
         width: 375px;
         z-index: 4;
     }
-}
+    }
