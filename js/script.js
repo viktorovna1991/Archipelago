@@ -79,7 +79,7 @@ $(document).ready(function() {
         $wrapPress = $('.Press'),
         $logo = $('.logo-icon'),
         $Stores = $('.Stores'),
-        $menuClose = $('.littleMenu');
+        $menuClose = $('.little_Menu');
 
     $Press.on('click', function() {
 

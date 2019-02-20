@@ -164,6 +164,7 @@ footer {
 }
 
 .container .little_menu .burger,
+.container .little_menu .blackburger,
 .container .stores .icon1 {
     display: none;
 }
