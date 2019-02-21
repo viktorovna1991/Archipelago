@@ -79,7 +79,7 @@ $(document).ready(function() {
         $wrapPress = $('.Press'),
         $logo = $('.logo-icon'),
         $Stores = $('.Stores'),
-        $menuClose = $('.little_Menu');
+        $menuClose = $('.littleMenu');
 
     $Press.on('click', function() {
 
@@ -122,10 +122,13 @@ $(document).ready(function() {
         //add class menu-show
         $wrapAbout.addClass('menu-show-left');
         $wrapInwrap.addClass('menu-show-left');
-        $menuClose.addClass('max_index black_menu'); 
-        $Stores.addClass('max_index black_menu');
-       
-        
+
+        $menuClose.addClass('max_index');
+        $menuClose.addClass('black_menu');
+
+        $Stores.addClass('black_menu');
+        $Stores.addClass('max_index');
+
     });
 
     $menuClose.click(function (event) {
